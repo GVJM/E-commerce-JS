@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>E-commerce</title>
+        <meta name="description" content="A simple e-commerce page.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <!-- Font-Awesome-->
+        <script src="https://kit.fontawesome.com/3a044b1033.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="assets/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar fixed-top navbar-expand navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">E-commerce</a>     
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#eletronics">Eletrônicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-dark cart-btn" href="#"><i class="fas fa-shopping-cart"></i> Carrinho</button>
+                        </li>                        
+                    </ul>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <div class="cart-modal hidden">
+                <div class='container bg-light border rounded mx-auto mt-1 p-3 mb-3'>
+                        <h5><i class="fas fa-shopping-cart"></i> Carrinho</a></h5>
+                        <div class='container'>
+                            <form id='cart-form' ACTION="" METHOD="GET">
+                            </form>
+                            <div class='row justify-content-between mt-3'>
+                                <div class='col'>
+                                    <p id='cart-total' class='fs-4 text-center'>Total: R$ 0.00</p>
+                                </div>
+                                <div class='col d-flex justify-content-end'>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-outline-danger cart-close col-4 col-sm-3 col-md-2">Fechar</button>
+                                        <input type="submit" value="Confirmar" form='cart-form' class='btn btn-outline-success col-4 col-sm-3 col-md-2 pe-4'>
+                                    </div>
+                                </div>
+                                
+                               
+                                
+                            </div>
+                  </div>
+                </div>
+            </div>
+
+            <section id='products'>
+                <div class='container'>
+                    <h2 class="text-center underline-gold">Eletrônicos</h2>
+                    <div id='eletronics' class="eletronicProductsContainer row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xl-6 py-5 g-3 text-center">         </div>
+                    </div>
+            </section>
+        </main>
+        <script src="dB.txt"></script>
+        <script src="assets/script.js"></script>
+    </body>
+</html>
